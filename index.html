@@ -4,17 +4,17 @@
     <title>体力テスト→CoC</title>
 </head>
 <body>
-    <label>反復横跳び <input type="text" id="dex_calc">点</label><br />
-    <label>踏み台昇降 <input type="text" id="con_calc">回/90s</label><br />
-    <label>腕立て伏せ <input type="text" id="str_calc">回</label><br />
-    <br />
-    <p>数値は全て半角で入力してください。</p>
-    <br />
-    <input type="button" value="計算" id="checkButton">
-    <p id="msg1"></p>
-    <p id="msg2">計算ボタンを押すとここに計算結果が表示されます</p>
-    <p id="msg3"></p>
-    <script>
+<label>反復横跳び <input type="text" id="dex_calc">点</label><br />
+<label>踏み台昇降 <input type="text" id="con_calc">回/90s</label><br />
+<label>腕立て伏せ <input type="text" id="str_calc">回</label><br />
+<br />
+<p>数値は全て半角で入力してください。</p>
+<br />
+<input type="button" value="計算" id="checkButton">
+<p id="msg1"></p>
+<p id="msg2">計算ボタンを押すとここに計算結果が表示されます</p>
+<p id="msg3"></p>
+<script>
 
         let box1 = document.getElementById('str_calc');
         let box2 = document.getElementById('dex_calc');
@@ -56,10 +56,12 @@
         }
 
     </script>
-    <h4>【計算方法】</h4>
-    <p>「身体運動・健康科学ベーシック」pp.204 記載の 2024 年度入学者の体力テスト結果の男子 1 年終了時の平均値と標準偏差をキャラクターシート作成時のダイスの出目(3d6)の平均値と標準偏差に対応させ、そこから数値を換算しています。(そのため 15 未満や 99 より大きい値が得られることがあります)<br />
-・STR = 腕立て伏せから算出<br />
-・DEX = 反復横跳びから算出<br />
-・CON = 踏み段昇降から算出<br />
-    </p>
+<h4>【計算方法】</h4>
+<p>「<a href="https://www.utp.or.jp/book/b598945.html">身体運動・健康科学ベーシック</a>」pp.204 記載の 2024 年度入学者の体力テスト結果の男子 1 年終了時の平均値と標準偏差をキャラクターシート作成時のダイスの出目(3d6)の平均値と標準偏差に対応させ、そこから数値を換算しています。(そのため 15 未満や 99 より大きい値が得られることがあります)<br />
+    ・STR = 腕立て伏せから算出<br />
+    ・DEX = 反復横跳びから算出<br />
+    ・CON = 踏み段昇降から算出<br />
+</p>
+<br />
+<p>ソースコード: <a href="https://github.com/Serena-Healer/SportsTestToCoC">https://github.com/Serena-Healer/SportsTestToCoC</a></p>
 </body>
